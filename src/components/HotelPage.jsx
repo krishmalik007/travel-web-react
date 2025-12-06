@@ -31,15 +31,15 @@ const Hotel = () => {
       {/* Gallery Section */}
       <div className="gallery">
         <div className="gallery-main">
-          <img src="/images/img i6.jpg" alt="Main hotel" height="600px" />
+          <img src={import.meta.env.BASE_URL + "images/img i6.jpg" }alt="Main hotel" height="600px" />
           <div className="gallery-award">Best of the Best 2024</div>
         </div>
         <div className="thumbnail-gallery">
-          <img src="/images/img i1.jpg" alt="Thumbnail 1" />
-          <img src="/images/img i2.webp" alt="Thumbnail 2" />
-          <img src="/images/img i3.webp" alt="Thumbnail 3" />
-          <img src="/images/img i4.webp" alt="Thumbnail 4" />
-          <img src="/images/img i5.jpg" alt="Thumbnail 5" />
+          <img src={import.meta.env.BASE_URL + "images/img i1.jpg" }alt="Thumbnail 1" />
+          <img src={import.meta.env.BASE_URL + "images/img i2.webp"} alt="Thumbnail 2" />
+          <img src={import.meta.env.BASE_URL + "images/img i3.webp"} alt="Thumbnail 3" />
+          <img src={import.meta.env.BASE_URL + "images/img i4.webp"} alt="Thumbnail 4" />
+          <img src={import.meta.env.BASE_URL + "images/img i5.jpg" }alt="Thumbnail 5" />
         </div>
       </div>
 

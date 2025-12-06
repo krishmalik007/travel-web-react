@@ -15,7 +15,7 @@ const HighestRatedStays = () => {
         <div className="stays-grid">
           <div className="card">
             <img
-              src="/images/img top1.jpg"
+              src={import.meta.env.BASE_URL + "images/img top1.jpg"}
               className="card-img-top"
               alt="The Oberoi Udaivilas"
             />
@@ -33,7 +33,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img top2.jpg"
+              src={import.meta.env.BASE_URL + "images/img top2.jpg"}
               className="card-img-top"
               alt="The Grace Hotel"
             />
@@ -51,7 +51,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img top3.jpg"
+              src={import.meta.env.BASE_URL + "images/img top3.jpg"}
               className="card-img-top"
               alt="Canaves Oia Epitome"
             />
@@ -69,7 +69,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img top4.jpg"
+              src={import.meta.env.BASE_URL + "images/img top4.jpg"}
               className="card-img-top"
               alt="Mahali Mzuri"
             />
@@ -96,7 +96,7 @@ const HighestRatedStays = () => {
         <div className="stays-grid">
           <div className="card">
             <img
-              src="/images/img hotel1.jpg"
+              src={import.meta.env.BASE_URL + "images/img hotel1.jpg"}
               className="card-img-top"
               alt="Islas Malvinas"
             />
@@ -114,7 +114,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img hotel2.jpg"
+              src={import.meta.env.BASE_URL + "images/img hotel2.jpg"}
               className="card-img-top"
               alt="Badrutt's Palace, Switzerland"
             />
@@ -132,7 +132,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img hotel3.jpg"
+              src={import.meta.env.BASE_URL + "images/img hotel3.jpg"}
               className="card-img-top"
               alt="Burj Khalifa, Dubai"
             />
@@ -150,7 +150,7 @@ const HighestRatedStays = () => {
 
           <div className="card">
             <img
-              src="/images/img hotel4.jpg"
+              src={import.meta.env.BASE_URL + "images/img hotel4.jpg"}
               className="card-img-top"
               alt="Taj Mahal, India"
             />

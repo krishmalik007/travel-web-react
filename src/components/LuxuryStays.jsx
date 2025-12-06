@@ -59,7 +59,7 @@ const LuxuryStays = () => {
         {/* Updated React component */}
         <div className="stay-group">
           <div className="large-stay">
-           <Link to="/place/Singapore"><img src="/images/img pckg5.jpg" alt="Large Image" /></Link> 
+           <Link to="/place/Singapore"><img src={import.meta.env.BASE_URL + "images/img pckg5.jpg"} alt="Large Image" /></Link> 
             <h3>
               Singapore Splendor with Genting Cruise
               <br />
@@ -83,7 +83,7 @@ const LuxuryStays = () => {
 
         <div className="single-stay">
           <div className="single-stay-image">
-          <Link to="/place/Kerala"><img src="/images/img pckg8.jpg" alt="Single Image" height="890px" /></Link>
+          <Link to="/place/Kerala"><img src={import.meta.env.BASE_URL + "images/img pckg8.jpg"} alt="Single Image" height="890px" /></Link>
             <h3>
               Kerala
               <br />

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="logo">
           <Link to="/">
-            <img src="/images/finallogo.png" alt="Logo" />
+            <img src={import.meta.env.BASE_URL + "images/finallogo.png"} alt="Logo" />
           </Link>
         </div>
         <ul className="nav-links">
