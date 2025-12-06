@@ -1,0 +1,194 @@
+/* ---------- Common heading & subtitle ---------- */
+
+.section-subtitle {
+  margin-bottom: 30px;
+  text-align: left;
+  color: rgb(64, 60, 60);
+  margin-left: 120px;
+}
+
+/* ---------- FIRST SECTION: Highest-Rated Luxury Stays (small cards) ---------- */
+
+.stay-card-container {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stay-card {
+  flex: 1;
+  max-width: 400px;
+}
+
+.stay-card-inner {
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stay-card-inner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+}
+
+.stay-card-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.stay-card-body {
+  padding: 10px 14px 14px;
+}
+
+.stay-card-text {
+  font-size: 16px;
+}
+
+/* ---------- SECOND SECTION: Seasonal Getaways (pehle jo bahut bade the) ---------- */
+
+.stay-container {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 0 1.5rem 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
+  gap: 20px;
+}
+
+/* columns */
+
+.stay-group,
+.single-stay,
+.column-stays {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* main big cards */
+
+.large-stay,
+.single-stay-image,
+.column-stay {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
+  height: 260px;              /* 👈 yahin se height control ho rahi hai */
+  background: #ffffff;
+}
+
+/* images – fixed height & cover */
+
+.large-stay img,
+.single-stay-image img,
+.column-stay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay text */
+
+.large-stay h3,
+.single-stay-image h3,
+.column-stay h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 12px;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* small cards below left side */
+
+.small-stays {
+  display: flex;
+  gap: 20px;
+}
+
+.small-stay {
+  position: relative;
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.16);
+  height: 200px;
+  background: #ffffff;
+}
+
+.small-stay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small-stay h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 8px 10px;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* ---------- Responsive tweaks ---------- */
+
+@media (max-width: 992px) {
+  .stay-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .column-stays {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .stay-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stay-container {
+    grid-template-columns: 1fr;
+  }
+
+  .large-stay,
+  .single-stay-image,
+  .column-stay {
+    height: 230px;
+  }
+
+  .small-stay {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stay-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .large-stay,
+  .single-stay-image,
+  .column-stay {
+    height: 210px;
+  }
+}
