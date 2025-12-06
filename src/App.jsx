@@ -1,19 +1,22 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
+// Main Components
+import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import PropertySection from './components/PropertySection';
 import HighestRatedStays from './components/HighestRatedStays';
-import HotelPage from './components/HotelPage';
 import TopAccommodations from './components/TopAccommodations';
-import Place from './components/Place';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import HolidayPackage from './components/HolidayPackage';
+import HotelPage from './components/HotelPage';
+import Place from './components/Place';
 import Slideshow from './components/Slideshow';
 
-// new pages
+// New Pages
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import Restaurants from './components/Restaurants';
@@ -26,17 +29,23 @@ import LearnMore from './components/LearnMore';
 
 function App() {
   return (
-    <Router>
+    // 👇 VERY IMPORTANT FOR GITHUB PAGES
+    <Router basename={import.meta.env.BASE_URL}>
+
       <Routes>
+
+        {/* HOME PAGE */}
         <Route
           path="/"
           element={
             <>
               <Navbar />
+
               <div className="image-container">
                 <div className="overlay-text">Discover Your Ideal Stay</div>
                 <SearchBar />
               </div>
+
               <PropertySection />
               <HighestRatedStays />
               <TopAccommodations />
@@ -45,12 +54,16 @@ function App() {
           }
         />
 
+        {/* HOLIDAY PACKAGES */}
         <Route path="/holiday-package" element={<HolidayPackage />} />
-        <Route path="/highest-rated" element={<HighestRatedStays />} />
+
+        {/* HOTEL PAGE */}
         <Route path="/HotelPage" element={<HotelPage />} />
+
+        {/* PLACE DYNAMIC PAGE */}
         <Route path="/place/:placeName" element={<Place />} />
 
-        {/* Extra main slideshow page if needed (optional) */}
+        {/* EXTRA SLIDESHOW PAGE */}
         <Route
           path="/slideshow"
           element={
@@ -62,7 +75,7 @@ function App() {
           }
         />
 
-        {/* New static pages */}
+        {/* STATIC PAGES */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/restaurants" element={<Restaurants />} />
