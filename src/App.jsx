@@ -1,22 +1,20 @@
-// App.js
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import './App.css';
 
-// Main Components
-import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import PropertySection from './components/PropertySection';
 import HighestRatedStays from './components/HighestRatedStays';
-import TopAccommodations from './components/TopAccommodations';
-import Footer from './components/Footer';
-import HolidayPackage from './components/HolidayPackage';
 import HotelPage from './components/HotelPage';
+import TopAccommodations from './components/TopAccommodations';
 import Place from './components/Place';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import HolidayPackage from './components/HolidayPackage';
 import Slideshow from './components/Slideshow';
 
-// New Pages
+// extra pages
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import Restaurants from './components/Restaurants';
@@ -28,24 +26,24 @@ import Help from './components/Help';
 import LearnMore from './components/LearnMore';
 
 function App() {
+  const heroBg = import.meta.env.BASE_URL + 'images/h 1.jpg';
+
   return (
-    // 👇 VERY IMPORTANT FOR GITHUB PAGES
     <Router basename={import.meta.env.BASE_URL}>
-
       <Routes>
-
-        {/* HOME PAGE */}
+        {/* HOME */}
         <Route
           path="/"
           element={
             <>
               <Navbar />
-
-              <div className="image-container">
+              <div
+                className="image-container"
+                style={{ backgroundImage: `url(${heroBg})` }}
+              >
                 <div className="overlay-text">Discover Your Ideal Stay</div>
                 <SearchBar />
               </div>
-
               <PropertySection />
               <HighestRatedStays />
               <TopAccommodations />
@@ -54,16 +52,19 @@ function App() {
           }
         />
 
-        {/* HOLIDAY PACKAGES */}
+        {/* HOLIDAY PACKAGES PAGE */}
         <Route path="/holiday-package" element={<HolidayPackage />} />
 
-        {/* HOTEL PAGE */}
+        {/* HIGHEST RATED PAGE (if you want direct route) */}
+        <Route path="/highest-rated" element={<HighestRatedStays />} />
+
+        {/* HOTEL DETAILS PAGE */}
         <Route path="/HotelPage" element={<HotelPage />} />
 
-        {/* PLACE DYNAMIC PAGE */}
+        {/* PLACE PAGE (dynamic) */}
         <Route path="/place/:placeName" element={<Place />} />
 
-        {/* EXTRA SLIDESHOW PAGE */}
+        {/* OPTIONAL SLIDESHOW PAGE */}
         <Route
           path="/slideshow"
           element={
@@ -76,15 +77,96 @@ function App() {
         />
 
         {/* STATIC PAGES */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/restaurants" element={<Restaurants />} />
-        <Route path="/flight" element={<Flight />} />
-        <Route path="/train" element={<Train />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/learn-more" element={<LearnMore />} />
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Navbar />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <>
+              <Navbar />
+              <Gallery />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/restaurants"
+          element={
+            <>
+              <Navbar />
+              <Restaurants />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/flight"
+          element={
+            <>
+              <Navbar />
+              <Flight />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/train"
+          element={
+            <>
+              <Navbar />
+              <Train />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <>
+              <Navbar />
+              <Terms />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/privacy"
+          element={
+            <>
+              <Navbar />
+              <Privacy />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/help"
+          element={
+            <>
+              <Navbar />
+              <Help />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/learn-more"
+          element={
+            <>
+              <Navbar />
+              <LearnMore />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
