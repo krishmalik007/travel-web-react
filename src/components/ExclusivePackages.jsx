@@ -3,22 +3,22 @@ import "./ExclusivePackages.css";
 
 const packages = [
   {
-    img: "/images/img pckg1.jpg",
+    img: "./images/img pckg1.jpg",
     title: "Kashmir",
     price: "₹ 24,999",
   },
   {
-    img: "/images/img pckg2.jpg",
+    img: "./images/img pckg2.jpg",
     title: "Vietnam",
     price: "₹ 29,499",
   },
   {
-    img: "/images/img pckg3.jpg",
+    img: "./images/img pckg3.jpg",
     title: "Ooty",
     price: "₹ 18,999",
   },
   {
-    img: "/images/img pckg4.jpg",
+    img: "./images/img pckg4.jpg",
     title: "Malaysia",
     price: "₹ 34,999",
   },
