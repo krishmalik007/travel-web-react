@@ -76,7 +76,6 @@ A fully responsive and feature-rich **travel booking website** built using **Rea
 TechnologyUsage**React.js**UI Components**Vite**Fast bundler & dev server**React Router**Routing & Navigation**CSS3 / Custom Styles**Fully Responsive UI**GitHub Pages**Deployment
 
 
-
 📜 **License**
 --------------
 
