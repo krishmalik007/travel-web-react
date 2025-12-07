@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Flight = () => {
   return (
     <>
-      <Navbar />
+      
       <section className="page-section">
         <div className="page-inner">
           <h1>Flights</h1>
@@ -15,7 +15,7 @@ const Flight = () => {
           </p>
         </div>
       </section>
-      <Footer />
+    
     </>
   );
 };

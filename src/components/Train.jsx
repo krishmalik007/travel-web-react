@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Train = () => {
   return (
     <>
-      <Navbar />
+     
       <section className="page-section">
         <div className="page-inner">
           <h1>Trains</h1>
@@ -14,7 +14,7 @@ const Train = () => {
           </p>
         </div>
       </section>
-      <Footer />
+      
     </>
   );
 };

@@ -1,24 +1,27 @@
+// src/components/ExclusivePackages.jsx
 import React from "react";
 import "./ExclusivePackages.css";
 
+const base = import.meta.env.BASE_URL;
+
 const packages = [
   {
-    img: "/images/img pckg1.jpg",
+    img: base + "images/img pckg1.jpg",
     title: "Kashmir",
     price: "₹ 24,999",
   },
   {
-    img: "/images/img pckg2.jpg",
+    img: base + "images/img pckg2.jpg",
     title: "Vietnam",
     price: "₹ 29,499",
   },
   {
-    img: "/images/img pckg3.jpg",
+    img: base + "images/img pckg3.jpg",
     title: "Ooty",
     price: "₹ 18,999",
   },
   {
-    img: "/images/img pckg4.jpg",
+    img: base + "images/img pckg4.jpg",
     title: "Malaysia",
     price: "₹ 34,999",
   },

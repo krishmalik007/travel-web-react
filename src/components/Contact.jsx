@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
+      
       <section className="page-section contact-page">
         <div className="page-inner contact-inner">
           <div className="contact-layout">
@@ -194,7 +194,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      
     </>
   );
 };

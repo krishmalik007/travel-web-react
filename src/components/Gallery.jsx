@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Gallery = () => {
   return (
     <>
-      <Navbar />
+  
       <section className="page-section">
         <div className="page-inner">
           <h1>Picture Gallery</h1>
@@ -14,7 +14,7 @@ const Gallery = () => {
           </p>
         </div>
       </section>
-      <Footer />
+   
     </>
   );
 };
