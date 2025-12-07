@@ -10,6 +10,9 @@ const base = import.meta.env.BASE_URL;
 const Place = () => {
   const { placeName } = useParams();
 
+  // ==========================
+  //     ALL PLACE PACKAGES
+  // ==========================
   const packageDetails = {
     Kerala: [
       {
@@ -20,7 +23,7 @@ const Place = () => {
         duration: "4N/5D",
       },
       {
-        title: "Premium 5N Trip to Kerala",
+        title: "Premium 5N Kerala Trip",
         description: "1N Cochin • 2N Munnar • 1N Thekkady • 1N Alleppey",
         image: `${base}images/img 2.jpg`,
         features: ["Flights Included", "5 Star Hotels", "Activities", "Transfers"],
@@ -30,17 +33,17 @@ const Place = () => {
 
     Australia: [
       {
-        title: "Premium 4N Australia Vacay",
+        title: "4N Australia Special",
         description: "Sydney • Gold Coast • Melbourne",
         image: `${base}images/img 28.jpg`,
-        features: ["Flights Included", "Luxury Hotels", "Sightseeing", "Transfers"],
+        features: ["Flights Included", "Luxury Hotels", "City Tours", "Transfers"],
         duration: "4N/5D",
       },
       {
-        title: "Premium 5N Australia Experience",
+        title: "5N Australia Experience",
         description: "Sydney • Cairns • Melbourne",
         image: `${base}images/img 29.webp`,
-        features: ["Flights Included", "Luxury Hotels", "Activities", "Transfers"],
+        features: ["Flights Included", "5 Star Hotels", "Activities", "Transfers"],
         duration: "5N/6D",
       },
     ],
@@ -95,10 +98,9 @@ const Place = () => {
         duration: "4N/5D",
       },
     ],
-
-    // ⭐ Add other cities the same way IF needed
   };
 
+  // DEFAULT fallback
   const placeData = packageDetails[placeName] || packageDetails["Kerala"];
 
   return (
@@ -108,12 +110,12 @@ const Place = () => {
       <div className="place-wrapper">
         <h1 className="place-title">{placeName}</h1>
         <p className="place-subtext">
-          Explore premium vacation packages curated specially for {placeName}.
+          Explore the most popular vacation packages available for {placeName}.
         </p>
 
-        {/* ⭐ Responsive Grid for Cards */}
-        <div className="place-grid">
-          {placeData.map((item, index) => (
+        {/* ⭐ SHOW ONLY 2 CARDS */}
+        <div className="place-row">
+          {placeData.slice(0, 2).map((item, index) => (
             <div className="place-card" key={index}>
               <img className="place-card-img" src={item.image} alt={item.title} />
 
