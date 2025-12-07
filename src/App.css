@@ -1,106 +1,204 @@
-/* src/App.css */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 }
 
-/* Global reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures that padding and borders don't cause overflow */
-}
-
-html,
-body {
-  width: 100%;
-  overflow-x: hidden; /* Prevents horizontal overflow */
-}
-
-body {
-  height: 100%;
-}
-
-/* HERO SECTION */
+/* Hero section (home page top) */
 .image-container {
   position: relative;
-  /* background-image: url('/images/h 1.jpg');  old line – ab inline style se aaye ga */
+  background-image: url("/images/h 1.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 105.5%;
-  margin-left: -20px;
+  height: 80vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1.5rem;
+  color: #ffffff;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.25),
+      transparent
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(15, 23, 42, 0.7),
+      rgba(15, 23, 42, 0.4),
+      rgba(15, 23, 42, 0.9)
+    );
 }
 
 .overlay-text {
-  position: absolute;
-  top: 20%;
-  width: 70%;
-  color: white;
-  font-size: 5rem;
-  font-weight: bold;
+  position: relative;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 700;
   text-align: center;
-  margin-right: 20px;
+  max-width: 800px;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
 
-/* SEARCH BAR ON HERO */
+/* SEARCH BAR (home hero) */
+
 .search-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  width: 100%;
 }
 
 .search-bar-wrapper {
   display: flex;
-  border: 2px solid orange;
-  border-radius: 10px;
-  background-color: white;
-  width: 1300px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 960px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(8px);
 }
 
 .input-wrapper {
+  flex: 1 1 220px;
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-right: 1px solid grey;
-  width: 500px;
+  gap: 0.6rem;
+  padding: 0.55rem 0.9rem;
+  border-right: 1px solid #e5e7eb;
 }
 
-.input-wrapper:last-child {
+.input-wrapper:last-of-type {
   border-right: none;
 }
 
-input {
+.input-wrapper i {
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+.search-bar-wrapper input[type="text"] {
   border: none;
   outline: none;
-  font-size: 16px;
-  width: 270px;
-  padding: 10px;
+  font-size: 0.95rem;
+  width: 100%;
+  background: transparent;
+  color: #111827;
 }
 
 #search-button {
-  background-color: blue;
-  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
   border: none;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 0 10px 10px 0;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.45);
 }
 
+#search-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.55);
+}
+
+/* Guest dropdown */
 .guest-dropdown-menu {
   position: absolute;
-  background-color: white;
-  padding: 20px;
-  margin-top: 60px;
-  margin-left: 695px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  right: 2.5rem;
+  margin-top: 0.6rem;
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.8rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.2);
+  min-width: 260px;
+  z-index: 20;
 }
 
 .guest-dropdown-menu label {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.guest-dropdown-menu input[type="number"] {
+  width: 70px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.5rem;
+}
+
+.guest-dropdown-menu #Button1 {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.5rem 0;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Sections spacing below hero */
+.section-subtitle {
+  margin-bottom: 30px;
+  text-align: left;
+  color: rgb(64, 60, 60);
+  margin-left: 120px;
+}
+
+/* Page bottom spacing when footer used */
+.app-page {
+  background-color: #f3f4f6;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .image-container {
+    height: 70vh;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+  }
+
+  .search-bar-wrapper {
+    border-radius: 1.25rem;
+  }
+
+  .input-wrapper {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .input-wrapper:last-of-type {
+    border-bottom: none;
+  }
+
+  #search-button {
+    width: 100%;
+  }
 }
