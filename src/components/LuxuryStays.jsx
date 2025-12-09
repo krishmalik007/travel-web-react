@@ -1,4 +1,4 @@
-// src/components/LuxuryStays.jsx
+
 import React from "react";
 import "./LuxuryStays.css";
 import { Link } from "react-router-dom";
