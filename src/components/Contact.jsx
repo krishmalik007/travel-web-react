@@ -14,7 +14,7 @@ const initialFormState = {
 const Contact = () => {
   const [formData, setFormData] = useState(initialFormState);
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState(null); // "success" | "error" | null
+  const [status, setStatus] = useState(null); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -51,14 +51,10 @@ const Contact = () => {
       return;
     }
 
-    // Clear errors and "submit"
     setErrors({});
     setStatus('success');
 
-    // For now, just log – yahan baad me API call laga sakte ho
     console.log('Contact form submitted:', formData);
-
-    // Reset form
     setFormData(initialFormState);
   };
 
