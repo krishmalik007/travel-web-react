@@ -1,4 +1,4 @@
-// src/components/ExclusivePackages.jsx
+
 import React from "react";
 import "./ExclusivePackages.css";
 
