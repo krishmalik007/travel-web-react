@@ -1,4 +1,4 @@
-// HolidayPackage.js
+
 import React from 'react';
 import Slideshow from './Slideshow';
 import LuxuryStays from './LuxuryStays';
