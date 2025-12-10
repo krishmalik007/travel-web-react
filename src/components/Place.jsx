@@ -100,7 +100,6 @@ const Place = () => {
     ],
   };
 
-  // DEFAULT fallback
   const placeData = packageDetails[placeName] || packageDetails["Kerala"];
 
   return (
