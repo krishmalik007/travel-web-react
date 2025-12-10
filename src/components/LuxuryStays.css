@@ -1,4 +1,4 @@
-/* ---------- Common heading & subtitle ---------- */
+
 
 .section-subtitle {
   margin-bottom: 30px;
@@ -7,7 +7,6 @@
   margin-left: 120px;
 }
 
-/* ---------- FIRST SECTION: Highest-Rated Luxury Stays (small cards) ---------- */
 
 .stay-card-container {
   max-width: 1200px;
@@ -50,7 +49,6 @@
   font-size: 16px;
 }
 
-/* ---------- SECOND SECTION: Seasonal Getaways (pehle jo bahut bade the) ---------- */
 
 .stay-container {
   max-width: 1200px;
