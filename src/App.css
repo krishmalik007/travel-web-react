@@ -3,7 +3,6 @@ body {
     sans-serif;
 }
 
-/* Hero section (home page top) */
 .image-container {
   position: relative;
   background-image: url("/images/h 1.jpg");
@@ -115,7 +114,6 @@ body {
   box-shadow: 0 14px 32px rgba(37, 99, 235, 0.55);
 }
 
-/* Guest dropdown */
 .guest-dropdown-menu {
   position: absolute;
   top: 100%;
@@ -159,7 +157,6 @@ body {
   cursor: pointer;
 }
 
-/* Sections spacing below hero */
 .section-subtitle {
   margin-bottom: 30px;
   text-align: left;
@@ -167,12 +164,10 @@ body {
   margin-left: 120px;
 }
 
-/* Page bottom spacing when footer used */
 .app-page {
   background-color: #f3f4f6;
 }
 
-/* Small screens */
 @media (max-width: 768px) {
   .image-container {
     height: 70vh;
