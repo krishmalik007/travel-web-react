@@ -19,7 +19,7 @@ body {
   color: #111827;
 }
 
-/* Generic container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,7 +35,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Generic page section (for new pages like Contact, Gallery, etc.) */
 .page-section {
   padding: 6rem 1.5rem 3rem;
   min-height: 70vh;
@@ -62,12 +61,12 @@ a:hover {
   line-height: 1.6;
 }
 
-/* Utility classes */
+
 .text-muted {
   color: #6b7280;
 }
 
-/* Buttons (generic) */
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
