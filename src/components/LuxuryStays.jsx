@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL;
 const LuxuryStays = () => {
   return (
     <div>
-      {/* Highest-Rated Luxury Stays Section */}
+    
       <h2
         style={{
           fontSize: "30px",
@@ -24,7 +24,6 @@ const LuxuryStays = () => {
         Explore the hottest travel spots around the globe.
       </p>
 
-      {/* Top row stays cards */}
       <div className="stay-card-container">
         {["Australia", "Europe", "Bali", "Canaves Oia Epitome", "Mahali Mzuri"].map(
           (location, index) => (
@@ -48,7 +47,6 @@ const LuxuryStays = () => {
         )}
       </div>
 
-      {/* Seasonal Getaways Section */}
       <h2
         className="section-title"
         style={{
@@ -66,7 +64,6 @@ const LuxuryStays = () => {
       </p>
 
       <div className="stay-container">
-        {/* Left column – Large + 2 small cards */}
         <div className="stay-group">
           <div className="large-stay">
             <Link to="/place/Singapore">
@@ -112,7 +109,6 @@ const LuxuryStays = () => {
           </div>
         </div>
 
-        {/* Middle column – Kerala tall image */}
         <div className="single-stay">
           <div className="single-stay-image">
             <Link to="/place/Kerala">
@@ -130,7 +126,6 @@ const LuxuryStays = () => {
           </div>
         </div>
 
-        {/* Right column – 2 stacked images */}
         <div className="column-stays">
           {[
             {

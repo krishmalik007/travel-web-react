@@ -82,7 +82,7 @@ nav {
   display: block;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
