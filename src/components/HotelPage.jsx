@@ -11,7 +11,6 @@ const Hotel = () => {
     <>
     <Navbar/>
     <div className="hotel-container">
-      {/* Header Section */}
       <div className="hotel-header">
         <div>
           <h1 className="hotel-title">The Oberoi Udaivilas</h1>
@@ -27,8 +26,6 @@ const Hotel = () => {
           <a href="mailto:abc@gmail.com"><FaEnvelope /> E-mail hotel</a>
         </div>
       </div>
-
-      {/* Gallery Section */}
       <div className="gallery">
         <div className="gallery-main">
           <img src={import.meta.env.BASE_URL + "images/img i6.jpg" }alt="Main hotel" height="600px" />
@@ -43,12 +40,10 @@ const Hotel = () => {
         </div>
       </div>
 
-      {/* Check Availability Button */}
       <div className="check-availability">
         <button><Link to="/">Check Availability</Link></button>
       </div>
 
-      {/* Review Section */}
       <div className="review-container">
         <h2 className="review-header">About</h2>
         <div className="rating-section">
@@ -59,7 +54,6 @@ const Hotel = () => {
           </div>
         </div>
 
-        {/* Progress Bars */}
         <div className="progress-bar-section">
           {['Location', 'Cleanliness', 'Service', 'Value'].map((item, index) => (
             <div key={index}>

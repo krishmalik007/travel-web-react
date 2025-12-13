@@ -6,7 +6,6 @@ import './HighestRatedStays.css';
 const HighestRatedStays = () => {
   return (
     <>
-      {/* Highest-Rated Luxury Stays */}
       <section className="highest-rated-section">
         <h1 className="stays-title">
           <b>Highest-Rated Luxury Stays</b>
