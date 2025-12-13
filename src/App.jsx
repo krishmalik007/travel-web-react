@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -13,8 +13,6 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HolidayPackage from './components/HolidayPackage';
 import Slideshow from './components/Slideshow';
-
-// extra pages
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import Restaurants from './components/Restaurants';
