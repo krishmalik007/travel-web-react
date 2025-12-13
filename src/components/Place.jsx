@@ -1,4 +1,4 @@
-// src/components/Place.jsx
+
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./Place.css";
@@ -10,9 +10,7 @@ const base = import.meta.env.BASE_URL;
 const Place = () => {
   const { placeName } = useParams();
 
-  // ==========================
-  //     ALL PLACE PACKAGES
-  // ==========================
+
   const packageDetails = {
     Kerala: [
       {
