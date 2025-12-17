@@ -29,7 +29,7 @@ function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <Routes>
-        {/* HOME */}
+      
         <Route
           path="/"
           element={
@@ -50,19 +50,18 @@ function App() {
           }
         />
 
-        {/* HOLIDAY PACKAGES PAGE */}
+     
         <Route path="/holiday-package" element={<HolidayPackage />} />
 
-        {/* HIGHEST RATED PAGE (if you want direct route) */}
+     
         <Route path="/highest-rated" element={<HighestRatedStays />} />
 
-        {/* HOTEL DETAILS PAGE */}
+     
         <Route path="/HotelPage" element={<HotelPage />} />
 
-        {/* PLACE PAGE (dynamic) */}
+   
         <Route path="/place/:placeName" element={<Place />} />
 
-        {/* OPTIONAL SLIDESHOW PAGE */}
         <Route
           path="/slideshow"
           element={
@@ -74,7 +73,7 @@ function App() {
           }
         />
 
-        {/* STATIC PAGES */}
+ 
         <Route
           path="/contact"
           element={

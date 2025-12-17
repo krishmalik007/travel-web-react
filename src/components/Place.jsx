@@ -110,7 +110,7 @@ const Place = () => {
           Explore the most popular vacation packages available for {placeName}.
         </p>
 
-        {/* ⭐ SHOW ONLY 2 CARDS */}
+      
         <div className="place-row">
           {placeData.slice(0, 2).map((item, index) => (
             <div className="place-card" key={index}>
