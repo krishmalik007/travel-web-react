@@ -86,7 +86,7 @@ const HighestRatedStays = () => {
         </div>
       </section>
 
-      {/* Top Picks: All-Inclusive Retreats */}
+    
       <section className="top-picks-section">
         <h1 className="stays-title">
           <b>Top Picks: All-Inclusive Retreats</b>
