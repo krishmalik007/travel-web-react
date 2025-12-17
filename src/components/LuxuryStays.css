@@ -59,7 +59,6 @@
   gap: 20px;
 }
 
-/* columns */
 
 .stay-group,
 .single-stay,
@@ -69,7 +68,7 @@
   gap: 20px;
 }
 
-/* main big cards */
+
 
 .large-stay,
 .single-stay-image,
@@ -78,11 +77,11 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
-  height: 260px;              /* 👈 yahin se height control ho rahi hai */
+  height: 260px;           
   background: #ffffff;
 }
 
-/* images – fixed height & cover */
+
 
 .large-stay img,
 .single-stay-image img,
@@ -93,7 +92,7 @@
   display: block;
 }
 
-/* overlay text */
+
 
 .large-stay h3,
 .single-stay-image h3,
@@ -111,7 +110,7 @@
   line-height: 1.4;
 }
 
-/* small cards below left side */
+
 
 .small-stays {
   display: flex;
@@ -147,7 +146,6 @@
   text-align: left;
 }
 
-/* ---------- Responsive tweaks ---------- */
 
 @media (max-width: 992px) {
   .stay-container {

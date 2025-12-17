@@ -76,7 +76,7 @@ const Hotel = () => {
         </div>
       </div>
 
-      {/* Location Section */}
+  
       <div className="location-container">
         <h2 className="location-header">Location</h2>
         <div className="location-details">
