@@ -64,7 +64,7 @@ const Contact = () => {
       <section className="page-section contact-page">
         <div className="page-inner contact-inner">
           <div className="contact-layout">
-            {/* Left side: info */}
+         
             <div className="contact-info-card">
               <h1>Contact Us</h1>
               <p className="contact-intro">
@@ -94,7 +94,7 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Right side: form */}
+         
             <div className="contact-form-card">
               <h2>Send us a message</h2>
               <form onSubmit={handleSubmit} noValidate>
