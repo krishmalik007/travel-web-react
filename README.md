@@ -6,7 +6,7 @@ A fully responsive and feature-rich **travel booking website** built using **Rea
 🚀 **Live Demo**
 ----------------
 
-🔗 **GitHub Pages:**👉(https://krishmalik007.github.io/travel-web-react/)
+🔗 GitHub Pages:👉(https://krishmalik007.github.io/travel-web-react/)
 
 📌 **Features**
 ---------------
